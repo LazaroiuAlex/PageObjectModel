@@ -100,12 +100,12 @@ public class XpathExample extends BaseTest {
 		for(WebElement order : orderNumbers) {
 			
 			jse.executeScript("arguments[0].setAttribute('style', 'background: red;border:6px solid blue;')", order);
+			
 		}
-		
 		
 		Thread.sleep(2000);
 		
-		
+				
 		
 		
 	}
