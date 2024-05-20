@@ -61,8 +61,10 @@ public class ShopPage extends BaseTest {
 		Actions action = new Actions(driver);
 		action.dragAndDropBy(element, x, y).perform();
 		
-		//action.moveToElement(element).clickAndHold(element).moveByOffset(x, y).release().perform(); --> same as above doar ca este scris ca un action chain
+		//action.moveToElement(element).clickAndHold(element).moveByOffset(x, y).release().perform(); --> same as above doar ca este scris ca un action chain in loc sa folosim dragAndDrop
 		
 	}
+	
+	
 	
 }
