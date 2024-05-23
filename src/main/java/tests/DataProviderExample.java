@@ -54,10 +54,10 @@ public class DataProviderExample extends BaseTest {
 		if(success){
 			assertTrue(login.checkMsgIsDisplayed(login.successLoginMessage));
 			login.logoutFromApp();
-		}else if(!success)
+		}else if(!success) { 
 			assertTrue(login.checkMsgIsDisplayed(login.errorLoginMessage));
 			login.closeLoginPopUp();
-			
+		}
 	}
 	
 
