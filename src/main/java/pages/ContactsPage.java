@@ -13,5 +13,17 @@ public class ContactsPage {
 	}
 	
 	public By name = By.xpath("//input[@name='your-name']");
+	
+	public By zoomInBtn = By.cssSelector("button[title='Zoom in']");
+	
+	public By zoomOutBtn = By.cssSelector("button[title='Zoom out']");
+	
+	public By iframe = By.tagName("iframe");
+	
+	public void zoomMap(By locator) {
+		driver.findElement(locator).click();
+		
+	}
+	
 
 }
